@@ -8,18 +8,29 @@
     <link rel="stylesheet" href="./index.css">
 </head>
 <body>
-    <div class="app" id="app">
+    <div class="app">
+        <div class="title">
+            <span>todos</span>
+        </div>
+        <div class="list-container">
+            <input id="input" class="input" placeholder="What needs to be done?" type="text" autofocus />
+            <div id="todolist"></div>
+            <div class="todo-bottom">
+                <div class="todo-count">
+                    <span id="count"></span> items left
+                </div>
+                <div class="todo-type" id="allBut">All</div>
+                <div class="todo-type" id="actBut">Active</div>
+                <div class="todo-type" id="comBut">Complete</div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Written by summer</p>
+            <p>Image from 500px: <a target="_black" href=" https://500px.me/community/photo-details/500px248408327"> https://500px.me/community/photo-details/500px248408327</a></p>
+        </div>
     </div> 
+    
 <script src="./lib/nej/src/define.js"></script>
-<script src="./lib/regular.min.js"></script>
-
 <script src="./index.js"></script>
-<script>
-    NEJ.define([
-        './index.js'
-    ],function(m){
-        m._$$Module._$allocate();
-    });
-</script>
 </body>
 </html>  
